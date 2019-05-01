@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/app.css">
+    <title></title>
+  </head>
+  <body>
+    <h1>Edit Page</h1>
+    <form action="/companys/<%= company._id %>?_method=put" method="POST">
+      <label for="name">Name</label>
+      <input type="text" name="name" id="name" value="<%= company.name %>"/>
+      <label for="color">Color</label>
+      <input type="text" name="color" id="color" value="<%= company.color %>"/>
+      <input type="submit" value="Create">
+    </form>
+  </body>
+</html>
